@@ -1,0 +1,136 @@
+.container {
+  min-width: 500px;
+}
+.nav {
+  justify-content: space-around;
+  font-size: 1.25rem;
+  min-height: 25px;
+}
+.nav a {
+  transition: all 250ms ease;
+  padding-top: 0;
+  height: 40px;
+  margin-top: 10px;
+  color: black;
+}
+.nav a:hover {
+  border-top: 3px solid lightgrey;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.container .imageHere {
+  padding: 0;
+}
+.container .imageHere img {
+  max-width: 100%;
+  max-height: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+@media (max-width: 991px) {
+  .container .imageHere img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container .imageHere img {
+    width: 70%;
+  }
+}
+.top-content {
+  background-color: #dfdfdf;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.jumbo {
+  background-color: #f2f2f2;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+@media (max-width: 991px) {
+  .jumbo {
+    font-size: 1.05rem;
+  }
+}
+.jobTable {
+  font-size: 1.2rem;
+  border: 1px solid #dfdfdf;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .jobTable {
+    font-size: 1rem;
+  }
+}
+.cardsGroup {
+  padding: 15px;
+  margin-right: 0;
+  margin-left: 0;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .cardsGroup {
+    flex-direction: column;
+  }
+}
+.cardsGroup .lambda {
+  width: 50%;
+  border-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.cardsGroup .hsu {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cardsGroup .delight {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card {
+  height: 100%;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+    min-width: 300%;
+    margin-left: 30px;
+  }
+}
+.bottom-wrap {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 15px;
+  background-color: #dfdfdf;
+  margin-bottom: 50px;
+}

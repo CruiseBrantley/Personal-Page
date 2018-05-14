@@ -1,0 +1,106 @@
+// Start here!
+@import "mixins";
+.container {
+  min-width: 500px;
+}
+.nav {
+  justify-content: space-around;
+  font-size: 1.25rem;
+  min-height: 25px;
+  a {
+    transition: all 250ms ease;
+    padding-top: 0;
+    height: 40px;
+    margin-top: 10px;
+    color: black;
+    &:hover {
+      border-top: 3px solid lightgrey;
+      .border-radius(5px);
+    }
+  }
+}
+.container .imageHere {
+  padding: 0;
+  img {
+    max-width: 100%;
+    max-height: auto;
+    .border-radius(10px);
+    @media (max-width: 991px) {
+      height: 100%;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      width: 70%;
+    }
+  }
+}
+.top-content {
+  background-color: rgb(223, 223, 223);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.jumbo {
+  background-color: #f2f2f2;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 0;
+  text-align: center;
+  font-size: 1.4rem;
+  @media (max-width: 991px) {
+    font-size: 1.05rem;
+  }
+}
+.jobTable {
+  font-size: 1.2rem;
+  border: 1px solid rgb(223, 223, 223);
+  .border-radius(10px);
+  margin-bottom: 0;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+.cardsGroup {
+  padding: 15px;
+  margin-right: 0;
+  margin-left: 0;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  width: 100%;
+  justify-content: center;
+  .lambda {
+    width: 50%;
+    border-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .hsu {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .delight {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+.card {
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 20px;
+    min-width: 300%;
+    margin-left: 30px;
+  }
+  height: 100%;
+  align-items: center;
+  .border-radius(10px);
+}
+.bottom-wrap {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 15px;
+  background-color: rgb(223, 223, 223);
+  margin-bottom: 50px;
+}
