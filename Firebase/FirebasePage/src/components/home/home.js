@@ -6,7 +6,7 @@ const Home = () => (
     <h1>Home</h1>
     <Link to="/notes">Notes</Link>
     <br />
-    <Link to="/resume">Resume</Link>
+    <a href="/resume/index.html">Resume</a>
   </div>
 );
 
